@@ -1,0 +1,127 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.0",
+  "strings" : {
+    "Take Position" : {
+      "comment" : "Primary play button on the main menu",
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Tomar posición" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Prendre le poste" } }
+      }
+    },
+    "How to Play" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Cómo jugar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment jouer" } }
+      }
+    },
+    "Stats" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Estadísticas" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Statistiques" } }
+      }
+    },
+    "Leaderboard" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Clasificación" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Classement" } }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ajustes" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réglages" } }
+      }
+    },
+    "Play Again" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Jugar otra vez" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rejouer" } }
+      }
+    },
+    "Main Menu" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Menú principal" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Menu principal" } }
+      }
+    },
+    "Resume" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Reanudar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Reprendre" } }
+      }
+    },
+    "PAUSED" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "EN PAUSA" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "EN PAUSE" } }
+      }
+    },
+    "End Shift" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Terminar turno" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Fin de service" } }
+      }
+    },
+    "Difficulty" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Dificultad" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Difficulté" } }
+      }
+    },
+    "Relaxed" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Relajado" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Détendu" } }
+      }
+    },
+    "Standard" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Estándar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Standard" } }
+      }
+    },
+    "Intense" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Intenso" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Intense" } }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Listo" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé" } }
+      }
+    },
+    "Skip" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Omitir" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer" } }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Siguiente" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suivant" } }
+      }
+    },
+    "Start Tutorial" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Iniciar tutorial" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Démarrer le tutoriel" } }
+      }
+    },
+    "Privacy Policy" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Política de privacidad" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Politique de confidentialité" } }
+      }
+    },
+    "Cleared to land" : {
+      "localizations" : {
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Autorizado a aterrizar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Autorisé à atterrir" } }
+      }
+    }
+  }
+}
