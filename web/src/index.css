@@ -33,6 +33,11 @@ body,
   font-family: var(--mono);
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   overflow: hidden;
 }
@@ -48,7 +53,9 @@ button {
 
 .crt {
   position: relative;
-  min-height: 100%;
+  flex: 1;
+  height: 100%;
+  min-height: 100dvh;
   background:
     radial-gradient(ellipse at center, var(--bg) 0%, var(--void) 72%),
     var(--void);
@@ -137,14 +144,17 @@ button {
 
 .app-shell {
   height: 100%;
+  min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   position: relative;
+  overflow: hidden;
 }
 
 .scope-wrap {
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 .scope-wrap canvas {
@@ -160,11 +170,22 @@ button {
   z-index: 2;
   padding: 10px 14px;
 }
+.hud {
+  pointer-events: none;
+}
+.hud button,
+.hud .panel {
+  pointer-events: auto;
+}
+.scope-gap {
+  pointer-events: none;
+}
 
 .menu {
   position: relative;
   z-index: 2;
   height: 100%;
+  min-height: 100dvh;
   overflow: auto;
   display: flex;
   justify-content: center;
@@ -274,13 +295,14 @@ button {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 5;
-  background: rgba(0, 0, 0, 0.82);
+  background: rgba(0, 0, 0, 0.94);
   overflow: auto;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .overlay-card {
@@ -300,11 +322,11 @@ button {
   letter-spacing: 0.08em;
 }
 
-.selected-strip {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
+.selected-strip span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 46%;
 }
 
 .dot {

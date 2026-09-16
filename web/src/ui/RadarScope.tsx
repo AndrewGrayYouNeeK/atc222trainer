@@ -4,6 +4,7 @@ import { altitudeLabel, isArrival, speedLabel, type Aircraft } from "../engine/t
 import type { GameEngine } from "../engine/engine";
 
 const DISPLAY_RANGE = 42;
+const SCOPE_FRACTION = 0.78;
 
 type Palette = {
   traffic: string;
@@ -58,7 +59,7 @@ export function RadarScope({ engine }: { engine: GameEngine }) {
       ctx.clearRect(0, 0, rect.width, rect.height);
 
       const center = { x: rect.width / 2, y: rect.height / 2 };
-      const radius = (Math.min(rect.width, rect.height) / 2) * 0.95;
+      const radius = (Math.min(rect.width, rect.height) / 2) * SCOPE_FRACTION;
       const scale = radius / DISPLAY_RANGE;
       const sweep = ((ts / 1000) * 60) % 360;
       paint(ctx, engine, center, radius, scale, sweep, drag.current, standard);
@@ -77,7 +78,7 @@ export function RadarScope({ engine }: { engine: GameEngine }) {
     const canvas = canvasRef.current!;
     const rect = canvas.getBoundingClientRect();
     const center = { x: rect.width / 2, y: rect.height / 2 };
-    const radius = (Math.min(rect.width, rect.height) / 2) * 0.95;
+    const radius = (Math.min(rect.width, rect.height) / 2) * SCOPE_FRACTION;
     return { center, scale: radius / DISPLAY_RANGE };
   };
 

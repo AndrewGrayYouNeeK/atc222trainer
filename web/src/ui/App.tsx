@@ -268,7 +268,7 @@ function GameScreen({ difficulty, onExit }: { difficulty: Difficulty; onExit: (r
           ))}
       </header>
       {toast && <div className="toast">{toast}</div>}
-      <div />
+      <div className="scope-gap" />
       <ControlDeck engine={engine} onTransmit={transmit} />
       {paused && !finished && (
         <div className="overlay">
@@ -423,7 +423,7 @@ function AcademyScreen({ onExit, onGraduate }: { onExit: () => void; onGraduate:
           </button>
         </div>
       </header>
-      <div />
+      <div className="scope-gap" />
       {!showingBriefing && (
         <div>
           <div className="panel" style={{ margin: "0 14px 10px", padding: 12 }}>

@@ -18,7 +18,7 @@ import {
   type TurnDirection,
   type Weather,
 } from "./types";
-import type { ParsedTransmission } from "./phraseology";
+import { commandPhrase, type ParsedTransmission } from "./phraseology";
 
 const SECTOR_RADIUS = 42;
 const CONFLICT_RANGE = 3;
@@ -217,7 +217,7 @@ export class GameEngine {
       }
     }
     if (applied) {
-      ac.lastInstruction = transmission.commands.map((c) => c.type.toUpperCase()).join(" ");
+      ac.lastInstruction = transmission.commands.map(commandPhrase).join(" · ").toUpperCase();
       this.commandsIssued += 1;
       this.emit({ type: "commandIssued" });
       this.notify();
